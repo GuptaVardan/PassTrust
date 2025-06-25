@@ -1,9 +1,9 @@
 import React from 'react'
 
 const Nav = () => (
-  <nav className="bg-purple-200">
-    <div className="container mx-auto flex justify-between items-center px-4">
-      <div className="logo font-bold text-xl">
+  <nav className="bg-green-300">
+    <div className="container mx-auto flex justify-between items-center px-20">
+      <div className="font-bold text-xl p-5">
         &lt;PassTrust/&gt;
       </div>
       <ul className="flex gap-6">
