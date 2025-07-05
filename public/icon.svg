@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#FFE27A"/>
+      <stop offset="100%" stop-color="#FFC400"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+  </defs>
+
+  <path
+    d="M160 200v-80a96 96 0 1 1 192 0v80"
+    fill="none"
+    stroke="url(#goldGrad)"
+    stroke-width="28"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    filter="url(#shadow)" />
+
+  <rect
+    x="96" y="200"
+    width="320" height="256"
+    rx="32" ry="32"
+    fill="url(#goldGrad)"
+    stroke="#E0AC00"
+    stroke-width="12"
+    filter="url(#shadow)" />
+
+  <g transform="translate(32 32)" filter="url(#shadow)">
+    <rect x="280" y="104" width="144" height="24" rx="6" ry="6"
+          fill="url(#goldGrad)" stroke="#E0AC00" stroke-width="6"/>
+    <rect x="350" y="128" width="16" height="176"
+          fill="url(#goldGrad)" stroke="#E0AC00" stroke-width="6"/>
+    <path d="M350 296h16v16h-16zM370 296h16v16h-16zM390 296h16v16h-16z"
+          fill="url(#goldGrad)" stroke="#E0AC00" stroke-width="4"/>
+  </g>
+</svg>
