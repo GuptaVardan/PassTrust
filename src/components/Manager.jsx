@@ -77,7 +77,7 @@ const Manager = () => {
           <h1 className='text-4xl text-center font-bold'>&lt;PassTrust/&gt;</h1>
           <p className='text-xl text-center'>Your Personal Password Manager</p>
           <input value={form.website} onChange={handleChange} placeholder='Enter the website URL' type="text" name="website" id="website" className='border-2 rounded-xl border-black w-full mx-auto my-5 p-2 text-black bg-white' />
-          <div className="flex justify-between gap-5">
+          <div className="flex flex-col sm:flex-row justify-between gap-5">
             <input value={form.username} onChange={handleChange} placeholder='Enter the username' type="text" name="username" id="username" className='border-2 rounded-xl border-black w-full my-2 mx-auto p-2 text-black bg-white' />
             <div className="relative w-full">
               <input ref={password} value={form.password} onChange={handleChange} placeholder='Enter the password' type="password" name="password" id="password" className='border-2 rounded-xl border-black w-full my-2 mx-auto p-2 text-black bg-white' />
