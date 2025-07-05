@@ -72,9 +72,13 @@ const Manager = () => {
       <ToastContainer/>
       <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
 
-      <div className="container mx-auto max-w-4xl bg-slate-50 my-10">
+      <div className="container mx-auto max-w-4xl bg-slate-100 my-10 rounded-2xl">
         <div className="flex flex-col p-4">
-          <h1 className='text-4xl text-center font-bold'>&lt;PassTrust/&gt;</h1>
+          <h1 className='text-4xl text-center font-bold'>
+            <span className="text-green-600">&lt;</span>
+            <span className="text-black">Pass</span>
+            <span className="text-green-600">Trust/&gt;</span>
+          </h1>
           <p className='text-xl text-center'>Your Personal Password Manager</p>
           <input value={form.website} onChange={handleChange} placeholder='Enter the website URL' type="text" name="website" id="website" className='border-2 rounded-xl border-black w-full mx-auto my-5 p-2 text-black bg-white' />
           <div className="flex flex-col sm:flex-row justify-between gap-5">
